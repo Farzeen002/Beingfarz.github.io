@@ -202,14 +202,13 @@
 						</address>
 					</div>
 					<div class="col-lg-6 col-md-6 col-xs-10 wow fadeInUp" data-wow-delay="0.6s">
-						<form id="contact-form" role="form" method="post" action="https://formspree.io/f/xbjevqny">
+						<form id="contact-form" role="form" method="post" action="https://formspree.io/f/xbjevqny" netlify>
 							<input name="name" type="text" class="form-control" id="name" placeholder="Your Name">
 							<input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
 							<textarea name="message" rows="5" class="form-control" id="message" placeholder="Your Message"></textarea>
 							<input name="send" type="submit" class="form-control" id="send" value="SEND ME">
 						</form>
 					</div>
-					<div id="success-message"></div>
 					<div class="col-md-1 col-sm-1"></div>
 				</div>
 				
@@ -251,45 +250,6 @@
 
 	</div>
 
-		
-
-		
-
-		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.3/dist/sweetalert2.all.min.js"></script>
-		<!-- ... -->
-		<script>
-			// Get the form element
-			const contactForm = document.getElementById('contact-form');
-		
-			// Add an event listener to the form's submit event
-			contactForm.addEventListener('submit', function(event) {
-				event.preventDefault(); // Prevent the form from submitting
-		
-				// Check if the required fields are empty
-				const name = document.getElementById('name').value;
-				const email = document.getElementById('email').value;
-				const message = document.getElementById('message').value;
-		
-				if (name === '' || email === '' || message === '') {
-					// Display an error message
-					Swal.fire({
-						icon: 'error',
-						title: 'Error',
-						text: 'Please fill in all the required fields.'
-					});
-				} else {
-					// Display the success message
-					Swal.fire({
-						icon: 'success',
-						title: 'Success',
-						text: 'Your message has been sent successfully.'
-					});
-		
-					// Optional: Reset the form after showing the success message
-					contactForm.reset();
-				}
-			});
-		</script>
 
 		<!-- jQuery -->
 		<script src="js/jquery.js"></script>
