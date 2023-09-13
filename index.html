@@ -52,8 +52,9 @@
 				<div class="row">
 					<div class="col-md-2"></div>
 					<div class="col-md-8 wow fadeIn" data-wow-delay="0.9s">
-						<div class="profile-image">
-							<img src="bg1.jpg" alt="">
+						<div id = "portfolio-slideshow" class="profile-image">
+							<img src="bg1.jpg" alt="Portfolio Image 1">
+						
 						</div>
 						<h1>Farzeen</h1>
 						<h2 class="rotate">Full Stack Developer,Mobile Application Developer,Front-End Developer, Software Developer, Fitness
@@ -136,7 +137,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-xs-11 wow fadeInLeft" data-wow-delay="0.9s">
-						<h2>ABOUT FARZEEN</h2>
+						<h2>ABOUT ME</h2>
 						<h4>Software Developer Intern</h4>
 						<p>I am Farzeen Ahmed, a highly motivated and skilled Software Developer Intern with proven
 							leadership capabilities. With a passion for coding and a strong desire to learn new
@@ -249,12 +250,12 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-5 col-lg-offset-1 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-						<address>
+						<address >
 							<p class="contact-title">CONTACT ME</p>
 							<p><i class="fa fa-phone"></i> +91 9513782975 </p>
 							<p><i class="fa fa-envelope-o"></i> afarzeen50@gmail.com </p>
 							<p><i class="fa fa-map-marker"></i> Mangalore</p>
-							<p><i class="fa fa-file" ></i> <a href="Farz_Resumee.pdf" target="_blank">View Resume</a></p>
+							<p><i class="fa fa-file" ></i> <a  href="Farz_Resumee.pdf" target="_blank">View Resume</a></p>
 						</address>
 					</div>
 					<div class="col-lg-6 col-md-6 col-xs-10 wow fadeInUp" data-wow-delay="0.6s">
@@ -279,7 +280,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 wow fadeIn" data-wow-delay="0.9s">
-					<p>Copyright &copy; 2023 Farzeen Personal Profile
+					<p>Copyright &copy; 2023 Farzeen's Personal Profile
 
 
 						<hr>
@@ -321,5 +322,24 @@
 	<!-- custom -->
 	<script src="js/custom.js"></script>
 	<!-- ... -->
+
+	<!-- <script>
+
+		const images = ['bg1.jpg'];
+
+		let currentImageIndex = 0;
+
+		function changeImage(){
+			const slideshowImage  = document.querySelector('#portfolio-slideshow img');
+			slideshowImage.src = images[currentImageIndex];
+
+			currentImageIndex = (currentImageIndex + 1) % images.length;
+		}
+
+		changeImage();
+
+		setInterval(changeImage, 2000);
+	</script> -->
+
 </body>
 </html>
