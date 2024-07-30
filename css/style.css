@@ -600,6 +600,10 @@ h5 {
     transition: all 0.4s ease-in-out;
 }
 
+.img-responsive{
+    border-radius: 5px;
+}
+
 #portfolio .portfolio-thumb:hover .portfolio-overlay {
     cursor: pointer;
     opacity: 0.8;
@@ -715,3 +719,58 @@ footer hr {
 }
 
 /* end social icon */
+
+
+/* <!-- CSS for Dark Mode -->
+<style>
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  body.dark-mode .section {
+    background-color: #1e1e1e;
+  }
+  .switch {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  .switch input {
+    display: none;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+  }
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  .slider.round {
+    border-radius: 34px;
+  }
+  .slider.round:before {
+    border-radius: 50%;
+  }
+</style> */
