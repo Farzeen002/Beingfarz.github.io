@@ -66,7 +66,7 @@ body {
     margin: 15px auto;
     display: block;
     width: 120px;
-    border: 2px solid #212431;
+    border: 2px solid #4a4c55;
    
   }
   
@@ -721,56 +721,73 @@ footer hr {
 /* end social icon */
 
 
-/* <!-- CSS for Dark Mode -->
-<style>
-  body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
-  }
-  body.dark-mode .section {
-    background-color: #1e1e1e;
-  }
-  .switch {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-  }
-  .switch input {
-    display: none;
-  }
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: 0.4s;
-  }
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    transition: 0.4s;
-  }
-  input:checked + .slider {
-    background-color: #2196F3;
-  }
-  input:checked + .slider:before {
-    transform: translateX(26px);
-  }
-  .slider.round {
-    border-radius: 34px;
-  }
-  .slider.round:before {
-    border-radius: 50%;
-  }
-</style> */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px; /* Adjust to desired width */
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+#honors h2{
+  text-align: center;
+}
+
+#honors h3{
+  text-align: center;
+  margin-top: 20px;
+}
+
+#honors p{
+  text-align: center;
+}
+
+
+#certifications h2{
+  text-align: center;
+}
+
+#honors .simple-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
