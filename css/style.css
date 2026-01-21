@@ -539,6 +539,43 @@ h5 {
     padding-bottom: 10px;
 }
 
+/* Work card expandable interaction */
+.work-card-expandable {
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.work-card-expandable .work-card-details {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease 0.05s, max-height 0.35s ease, transform 0.3s ease 0.05s;
+    pointer-events: none;
+}
+
+.work-card-expandable:hover .work-card-details,
+.work-card-expandable.active .work-card-details {
+    opacity: 1;
+    max-height: 1000px;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* Prevent hover on touch devices */
+@media (hover: hover) {
+    .work-card-expandable:hover .work-card-details {
+        opacity: 1;
+        max-height: 1000px;
+        transform: translateY(0);
+    }
+}
+
+/* Smooth reveal animation */
+.work-card-expandable.active .work-card-details > * {
+    animation: fadeInUp 0.35s ease forwards;
+}
+
 /* end work */
 
 /* start about */
